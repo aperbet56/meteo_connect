@@ -1,0 +1,214 @@
+/**** Importation des polices ****/
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Pacifico&display=swap');
+
+/**** Reset ****/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Pacifico", sans-serif;
+}
+
+/**** body ****/
+
+body {
+    background-color: #d4d8f0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 12px;
+    font-family: "Figtree", sans-serif;
+}
+
+/**** container principal ****/
+
+.container {
+    height: 400px;
+    background-color: #232946;
+    color: #fffffe;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+/**** left side ****/
+
+.left-info {
+    width: 260px;
+    height: 100%;
+    float: left;
+    display: flex;
+    border-radius: 25px;
+    justify-content: center;
+    background: url("img/background-meteo.jpg");
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.03) perspective(200px);
+    box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
+    text-transform: capitalize;
+}
+
+.pic-gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(135deg, #5c6bc0 10%, #0d47a1 100%);
+    border-radius: 25px;
+    opacity: 0.5;
+}
+
+.today-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.today-info h2 {
+    text-transform: uppercase;
+}
+
+.today-info h2,
+.today-info span,
+.taday-info div {
+    padding-bottom: 8px;
+}
+
+.today-weather {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-45%, -50%);
+    margin-top: 30px;
+}
+
+.today-weather .bx {
+    font-size: 6rem;
+    margin-bottom: 20px;
+}
+
+.today-weather .bx,
+.weather-temp,
+.today-weather h3 {
+    text-align: center;
+}
+
+.weather-temp {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.today-weather h3 {
+    line-height: 1.5;
+}
+
+/**** right side ****/
+
+.right-info {
+    float: right;
+    position: relative;
+    height: 100%;
+    padding-top: 25px;
+}
+
+.day-info {
+    padding: 25px 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.day-info div:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.day-info div .title {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.day-info div .value {
+    float: right;
+}
+
+.days-list {
+    display: flex;
+    margin: 10px 35px;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.35);
+    border-radius: 10px;
+}
+
+.days-list li {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.days-list li:hover {
+    transform: scale(1.1);
+    background-color: #fffffe;
+    color: #222831;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.days-list li .bx {
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+
+.days-list li .day-temp {
+    margin-top: 6px;
+    font-weight: 700;
+}
+
+/**** bouton ****/
+
+.btn-container {
+    padding: 25px 35px;
+}
+
+.loc-button {
+    width: 100%;
+    font-weight: 700;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #d4d8f0;
+    color: #232946;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    transition: background-color 0.3s ease-in-out,
+        border-radius 0.3s ease-in-out;
+}
+
+.loc-button:hover {
+    background-color: #b8c1ec;
+    border-radius: 25px;
+}
