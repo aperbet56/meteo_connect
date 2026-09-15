@@ -16,78 +16,95 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Début section container -->
-    <div class="container">
-      <!-- Début du côté gauche -->
-      <div class="left-info">
-        <div class="pic-gradient"></div>
-        <div class="today-info">
-          <h2></h2>
-          <span></span>
-          <div>
-            <i class="bx bx-current-location"></i>
-            <span></span>
-          </div>
-        </div>
-        <div class="today-weather">
-          <i class="bx"></i>
-          <h2 class="weather-temp"></h2>
-          <h3></h3>
-        </div>
-      </div>
-      <!-- Fin du côté gauche -->
+    <!-- Début du header -->
+    <header>
+      <h1>Meteo connect</h1>
+    </header>
+    <!-- Fin du header -->
 
-      <!-- Début du côté droit -->
-      <div class="right-info">
-        <div class="day-info">
-          <div>
-            <span class="title">PRECIPITATION</span>
-            <span class="value"></span>
+    <!-- Début du main -->
+    <main>
+      <!-- Début section container -->
+      <section class="container">
+        <!-- Début du côté gauche -->
+        <div class="left-info">
+          <div class="pic-gradient"></div>
+          <div class="today-info">
+            <h2></h2>
+            <span></span>
+            <div>
+              <i class="bx bx-current-location"></i>
+              <span></span>
+            </div>
           </div>
-          <div>
-            <span class="title">HUMIDITE</span>
-            <span class="value"></span>
-          </div>
-          <div>
-            <span class="title">VENT</span>
-            <span class="value"></span>
+          <div class="today-weather">
+            <i class="bx"></i>
+            <h2 class="weather-temp"></h2>
+            <h3></h3>
           </div>
         </div>
+        <!-- Fin du côté gauche -->
 
-        <ul class="days-list">
-          <li>
-            <i class="bx"></i>
-            <span></span>
-            <span class="day-temp"></span>
-          </li>
-          <li>
-            <i class="bx"></i>
-            <span></span>
-            <span class="day-temp"></span>
-          </li>
-          <li>
-            <i class="bx"></i>
-            <span></span>
-            <span class="day-temp"></span>
-          </li>
-          <li>
-            <i class="bx"></i>
-            <span></span>
-            <span class="day-temp"></span>
-          </li>
-        </ul>
-        <!-- Début du bouton -->
-        <div class="btn-container">
-          <button class="loc-button">Rechercher une ville</button>
+        <!-- Début du côté droit -->
+        <div class="right-info">
+          <div class="day-info">
+            <!-- Implémenter en JS -->
+            <div>
+              <span class="title">PRECIPITATION</span>
+              <span class="value"></span>
+            </div>
+            <div>
+              <span class="title">HUMIDITE</span>
+              <span class="value"></span>
+            </div>
+            <div>
+              <span class="title">VENT</span>
+              <span class="value"></span>
+            </div>
+          </div>
+
+          <ul class="days-list">
+            <!-- implémenter en JS -->
+            <li>
+              <i class="bx"></i>
+              <span></span>
+              <span class="day-temp"></span>
+            </li>
+            <li>
+              <i class="bx"></i>
+              <span></span>
+              <span class="day-temp"></span>
+            </li>
+            <li>
+              <i class="bx"></i>
+              <span></span>
+              <span class="day-temp"></span>
+            </li>
+            <li>
+              <i class="bx"></i>
+              <span></span>
+              <span class="day-temp"></span>
+            </li>
+          </ul>
+          <!-- Début du bouton -->
+          <div class="btn-container">
+            <button class="loc-button">Rechercher une ville</button>
+          </div>
+          <!-- Fin du bouton -->
         </div>
-        <!-- Fin du bouton -->
-      </div>
-      <!-- Fin du côté droit -->
-    </div>
-    <!-- Fin section container -->
+        <!-- Fin du côté droit -->
+      </section>
+      <!-- Fin section container -->
+    </main>
+    <!-- Fin du main-->
+
+    <!-- Début du footer -->
+    <footer>
+      <p class="copyright">&copy; - Météo connect. Tous droits réservés.</p>
+    </footer>
+    <!-- Fin du footer -->
 
     <!-- Importation du fichier JS -->
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
