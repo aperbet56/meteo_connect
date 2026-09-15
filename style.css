@@ -212,3 +212,41 @@ body {
     background-color: #b8c1ec;
     border-radius: 25px;
 }
+
+/**** Responsive design version mobile ****/
+
+@media screen and (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        height: 100%;
+    }
+
+    .left-info,
+    .right-info {
+        width: 100%;
+        max-height: 500px;
+    }
+
+    .today-info {
+        top: 0;
+    }
+
+    .today-weather .bx {
+        margin-top: 20px;
+    }
+
+    .day-info,
+    .btn-container {
+        padding: 20px;
+    }
+
+    .days-list {
+        margin: 10px 20px;
+    }
+
+    .days-list li {
+        width: 25%;
+    }
+}
