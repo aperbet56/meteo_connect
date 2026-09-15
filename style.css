@@ -31,13 +31,45 @@ h3 {
 
 body {
     background-color: #d4d8f0;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding-inline: 12px;
+    font-family: "Figtree", sans-serif;
+}
+
+/**** header, footer ****/
+
+header,
+footer {
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 12px;
-    font-family: "Figtree", sans-serif;
+    padding: 40px 12px;
+}
+
+/**** h1, .copyright ****/
+h1,
+.copyright {
+    text-align: center;
+}
+
+/**** h1 ****/
+
+h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    /*margin-bottom: 60px;*/
+}
+
+/**** main ****/
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /**** container principal ****/
@@ -213,6 +245,14 @@ body {
     border-radius: 25px;
 }
 
+/**** footer ****/
+
+.copyright {
+    font-size: 1.2rem;
+    font-weight: 500;
+    /*margin-top: 30px;*/
+}
+
 /**** Responsive design version mobile ****/
 
 @media screen and (max-width: 767px) {
@@ -226,7 +266,7 @@ body {
     .left-info,
     .right-info {
         width: 100%;
-        max-height: 500px;
+        height: 380px;
     }
 
     .today-info {
