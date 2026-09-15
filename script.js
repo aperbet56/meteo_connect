@@ -7,6 +7,7 @@ const todayInfo = document.querySelector(".today-info");
 const todayWeatherIcon = document.querySelector(".today-weather i");
 const todayTemp = document.querySelector(".weather-temp");
 const daysList = document.querySelector(".days-list");
+const copyrightYear = document.querySelector(".year");
 
 // Correspondance entre les codes de conditions météorologiques et les noms de classes d'icônes (selon la réponse de l'API OpenWeather)
 const weatherIconMap = {
@@ -150,3 +151,12 @@ locButton.addEventListener("click", () => {
   // Appel de la fonctionfetchWeatherData(loaction)
   fetchWeatherData(location);
 });
+
+const getCurrentYear = () => {
+  const today = new Date();
+  const getCurrentYear = today.getFullYear();
+  copyrightYear.textContent = `${getCurrentYear}`;
+};
+
+// Appel de la fonction getCurrentYear()
+getCurrentYear();
