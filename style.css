@@ -102,7 +102,7 @@ main {
     background: url("img/background-meteo.jpg");
     background-position: center;
     background-size: cover;
-    transform: scale(1.03) perspective(200px);
+    transform: scale(1.03);
     box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
     text-transform: capitalize;
 }
