@@ -1,5 +1,7 @@
 ## 🌤️ METEO CONNECT : APPLICATION METEO 5 JOURS
 
+![Design preview for the project](./img/preview.png)
+
 ## 🚀 Le challenge
 
 Météo connect est une application simple et intuitive qui permet de consulter les prévisions météorologiques en temps réel et sur les 4 prochains jours pour n'importe quelle ville du monde.
