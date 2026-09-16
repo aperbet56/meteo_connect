@@ -29,8 +29,11 @@ Lien vers le projet : https://aperbet56.github.io/meteo_connect/
 - Page web responsive
 - Importation des polices "Pacifico" et "Figtree"
 - Importation de Boxicons pour les icônes
+- Commentaires HTML
+- Commentaires CSS
 - API Météo: [OpenWeatherMap](https://openweathermap.org)
 - JavaScript
+- Code JavaScript commenté
 - addEventListener
 - async/await
 - fetch
