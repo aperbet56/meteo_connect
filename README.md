@@ -37,3 +37,13 @@ Lien vers le projet : https://aperbet56.github.io/meteo_connect/
 - addEventListener
 - async/await
 - fetch
+
+## 📂 Structure du projet
+
+```text
+├── index.html          # Structure HTML5 sémantique
+├── style.css           # Style de l'application météo
+└── script.js           # Logique JavaScript avec récupération des données de l'API
+```
+
+---
