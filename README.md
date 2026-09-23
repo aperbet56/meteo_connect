@@ -23,7 +23,8 @@ Lien vers le projet : https://aperbet56.github.io/meteo_connect/
 - CSS3
 - Flexbox
 - Animations CSS (transition)
-- Position absolute et relative
+- Créaion d'un loader
+- Position absolute, relative et fixed
 - Importation du normaliseur : le fichier normalize.css
 - Desktop first
 - Page web responsive
