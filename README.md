@@ -22,7 +22,7 @@ Lien vers le projet : https://aperbet56.github.io/meteo_connect/
 - Utlisation des balises sémantiques HTML5
 - CSS3
 - Flexbox
-- Animations CSS (transition)
+- Animations CSS (transition, @keyframes)
 - Créaion d'un loader
 - Position absolute, relative et fixed
 - Importation du normaliseur : le fichier normalize.css
