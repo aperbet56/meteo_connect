@@ -47,3 +47,7 @@ Lien vers le projet : https://aperbet56.github.io/meteo_connect/
 ```
 
 ---
+
+## 📝 Licence
+
+Projet libre de droits. Vous pouvez l'utiliser, le modifier et le distribuer selon vos besoins professionnels ou éducatifs.
