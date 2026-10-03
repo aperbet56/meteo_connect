@@ -49,9 +49,9 @@ const fetchWeatherData = async (location) => {
       const todayWeather = data.list[0].weather[0].description;
       const todayTemperature = `${Math.round(data.list[0].main.temp)}°C`;
       const todayWeatherIconCode = data.list[0].weather[0].icon;
-      const weatherMain = data.list[0].weather[0].main.toLowerCase();
+      /* const weatherMain = data.list[0].weather[0].main.toLowerCase();
 
-      // Choix du fond d'écran en fonction de la météo en cours
+       // Choix du fond d'écran en fonction de la météo en cours
       const weatherBackgrounds = {
         clear: "url('img/clear.webp')",
         clouds: "url('img/cloudy.webp')",
@@ -65,7 +65,7 @@ const fetchWeatherData = async (location) => {
       // Si la météo n’est pas reconnue, on utilise un fond par défaut
       let backgroundImage =
         weatherBackgrounds[weatherMain] || "url('img/background-meteo.jpg')";
-      leftInfo.style.backgroundImage = `${backgroundImage}`;
+      leftInfo.style.backgroundImage = `${backgroundImage}`;*/
 
       todayInfo.querySelector("h2").textContent = new Date().toLocaleDateString(
         "fr-FR",
