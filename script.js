@@ -1,5 +1,5 @@
 // clé API
-const apiKey = "6529bbf8a404d9dc7494e5331f646f82"; // ⚠️ Ane pas afficher normalement
+const apiKey = "6529bbf8a404d9dc7494e5331f646f82"; // ⚠️ A ne pas afficher normalement
 
 // Récupération des éléments HTML5
 const locButton = document.querySelector(".loc-button");
@@ -8,6 +8,7 @@ const todayWeatherIcon = document.querySelector(".today-weather i");
 const todayTemp = document.querySelector(".weather-temp");
 const daysList = document.querySelector(".days-list");
 const copyrightYear = document.querySelector(".year");
+const leftInfo = document.querySelector(".left-info");
 
 // Correspondance entre les codes de conditions météorologiques et les noms de classes d'icônes (selon la réponse de l'API OpenWeather)
 const weatherIconMap = {
@@ -40,7 +41,7 @@ const fetchWeatherData = async (location) => {
   await fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
-      // console.log(data);
+      //console.log(data);
       // Affichage d'un message de réussite de la requête dans la console
       console.log("✅ Requête réussie");
 
@@ -48,6 +49,23 @@ const fetchWeatherData = async (location) => {
       const todayWeather = data.list[0].weather[0].description;
       const todayTemperature = `${Math.round(data.list[0].main.temp)}°C`;
       const todayWeatherIconCode = data.list[0].weather[0].icon;
+      const weatherMain = data.list[0].weather[0].main.toLowerCase();
+
+      // Choix du fond d'écran en fonction de la météo en cours
+      const weatherBackgrounds = {
+        clear: "url('img/clear.webp')",
+        clouds: "url('img/cloudy.webp')",
+        rain: "url('img/rain.webp')",
+        thunderstorm: "url('img/thunder.webp')",
+        snow: "url('img/snow.webp')",
+        mist: "url('img/mist.webp')",
+        haze: "url('img/haze.webp')",
+      };
+
+      // Si la météo n’est pas reconnue, on utilise un fond par défaut
+      let backgroundImage =
+        weatherBackgrounds[weatherMain] || "url('img/background-meteo.jpg')";
+      leftInfo.style.backgroundImage = backgroundImage;
 
       todayInfo.querySelector("h2").textContent = new Date().toLocaleDateString(
         "fr-FR",
