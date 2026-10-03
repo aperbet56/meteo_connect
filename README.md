@@ -42,7 +42,9 @@ Lien vers le projet : https://aperbet56.github.io/meteo_connect/
 ## 📂 Structure du projet
 
 ```text
+├── img                 # Images du projet, favicon et preview
 ├── index.html          # Structure HTML5 sémantique
+├── normalize.css       # Fichier normalize.css
 ├── style.css           # Style de l'application météo
 └── script.js           # Logique JavaScript avec récupération des données de l'API
 ```
