@@ -235,6 +235,7 @@ main {
     transform: scale(1.03);
     box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
     text-transform: capitalize;
+    transition: background-image 0.2s ease-in-out;
 }
 
 .pic-gradient {
