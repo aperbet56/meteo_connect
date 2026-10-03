@@ -223,6 +223,7 @@ main {
 /**** left side ****/
 
 .left-info {
+    position: relative;
     width: 260px;
     height: 100%;
     float: left;
