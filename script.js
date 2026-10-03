@@ -65,7 +65,7 @@ const fetchWeatherData = async (location) => {
       // Si la météo n’est pas reconnue, on utilise un fond par défaut
       let backgroundImage =
         weatherBackgrounds[weatherMain] || "url('img/background-meteo.jpg')";
-      leftInfo.style.backgroundImage = backgroundImage;
+      leftInfo.style.backgroundImage = `${backgroundImage}`;
 
       todayInfo.querySelector("h2").textContent = new Date().toLocaleDateString(
         "fr-FR",
@@ -89,7 +89,7 @@ const fetchWeatherData = async (location) => {
       const weatherDescriptionElement = document.querySelector(
         ".today-weather > h3"
       );
-      weatherDescriptionElement.textContent = todayWeather;
+      weatherDescriptionElement.textContent = `${todayWeather}`;
 
       // Mise à jour de la section "day-info"
       const todayPrecipitation = `${data.list[0].pop}%`;
@@ -153,7 +153,7 @@ const fetchWeatherData = async (location) => {
     });
 };
 
-// Ecoute de l'événement chargement de la page et affichage des données de la ville du Puy-en-Vealy
+// Ecoute de l'événement chargement de la page et affichage des données de la ville du Puy-en-Velay
 document.addEventListener("DOMContentLoaded", () => {
   const defaultLocation = "Puy-en-Velay";
   // Appel de la fonction fetchWeatherData ayant comme paramètre defaultLocation
@@ -170,6 +170,7 @@ locButton.addEventListener("click", () => {
   fetchWeatherData(location);
 });
 
+// Déclaration de la fonction getCurrentYear qui va permettre l'affichage dynamique de l'année dans le footer
 const getCurrentYear = () => {
   const today = new Date();
   const getCurrentYear = today.getFullYear();
